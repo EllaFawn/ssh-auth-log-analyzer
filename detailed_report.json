@@ -3,8 +3,9 @@
     "total_lines": 82,
     "total_failed": 56,
     "total_accepted": 7,
-    "unique_ips": 19,
-    "unique_offender_ips": 8,
+    "total_invalid_user": 6,
+    "unique_ips": 15,
+    "unique_offender_ips": 12,
     "by_day": {
       "2025-03-10": 82
     }
@@ -61,20 +62,67 @@
       1
     ]
   ],
+  "invalid_user_by_ip": [
+    [
+      "192.0.2.13",
+      1
+    ],
+    [
+      "192.0.2.55",
+      1
+    ],
+    [
+      "198.51.100.120",
+      1
+    ],
+    [
+      "192.0.2.77",
+      1
+    ],
+    [
+      "198.51.100.88",
+      1
+    ],
+    [
+      "192.0.2.99",
+      1
+    ]
+  ],
+  "targeted_users": [
+    [
+      "admin",
+      39
+    ],
+    [
+      "root",
+      7
+    ],
+    [
+      "test",
+      5
+    ],
+    [
+      "guest",
+      5
+    ]
+  ],
+  "suspicious_logins": [
+    "192.0.2.99"
+  ],
   "brute_force_incidents": [
     {
       "ip": "203.0.113.45",
-      "count": 5,
+      "count": 6,
       "start_time": "2025-03-10T13:45:01",
-      "end_time": "2025-03-10T13:45:50",
-      "duration_minutes": 0.8166666666666667
+      "end_time": "2025-03-10T13:46:05",
+      "duration_minutes": 1.07
     },
     {
       "ip": "203.0.113.46",
-      "count": 5,
+      "count": 7,
       "start_time": "2025-03-10T13:46:42",
-      "end_time": "2025-03-10T13:56:00",
-      "duration_minutes": 9.3
+      "end_time": "2025-03-10T13:56:30",
+      "duration_minutes": 9.8
     },
     {
       "ip": "198.51.100.99",
@@ -84,18 +132,44 @@
       "duration_minutes": 1.05
     },
     {
-      "ip": "203.0.113.200",
+      "ip": "203.0.113.46",
       "count": 5,
-      "start_time": "2025-03-10T14:03:00",
-      "end_time": "2025-03-10T14:03:55",
-      "duration_minutes": 0.9166666666666666
+      "start_time": "2025-03-10T13:56:45",
+      "end_time": "2025-03-10T14:06:35",
+      "duration_minutes": 9.83
+    },
+    {
+      "ip": "203.0.113.45",
+      "count": 6,
+      "start_time": "2025-03-10T13:57:35",
+      "end_time": "2025-03-10T13:58:45",
+      "duration_minutes": 1.17
     },
     {
       "ip": "198.51.100.120",
       "count": 5,
       "start_time": "2025-03-10T14:00:01",
       "end_time": "2025-03-10T14:01:02",
-      "duration_minutes": 1.0166666666666666
+      "duration_minutes": 1.02
+    },
+    {
+      "ip": "203.0.113.200",
+      "count": 5,
+      "start_time": "2025-03-10T14:03:00",
+      "end_time": "2025-03-10T14:03:55",
+      "duration_minutes": 0.92
+    },
+    {
+      "ip": "203.0.113.45",
+      "count": 6,
+      "start_time": "2025-03-10T14:09:12",
+      "end_time": "2025-03-10T14:10:20",
+      "duration_minutes": 1.13
     }
-  ]
+  ],
+  "settings": {
+    "year": 2025,
+    "window_minutes": 10.0,
+    "threshold": 5
+  }
 }
